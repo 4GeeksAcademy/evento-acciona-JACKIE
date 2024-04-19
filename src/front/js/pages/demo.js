@@ -4,38 +4,28 @@ import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
 
 export const Demo = () => {
-	const { store, actions } = useContext(Context);
+	
 
 	return (
-		<div className="container">
-			<ul className="list-group">
-				{store.demo.map((item, index) => {
-					return (
-						<li
-							key={index}
-							className="list-group-item d-flex justify-content-between"
-							style={{ background: item.background }}>
-							<Link to={"/single/" + index}>
-								<span>Link to: {item.title}</span>
-							</Link>
-							{// Conditional render example
-							// Check to see if the background is orange, if so, display the message
-							item.background === "orange" ? (
-								<p style={{ color: item.initial }}>
-									Check store/flux.js scroll to the actions to see the code
-								</p>
-							) : null}
-							<button className="btn btn-success" onClick={() => actions.changeColor(index, "orange")}>
-								Change Color
-							</button>
-						</li>
-					);
-				})}
-			</ul>
-			<br />
-			<Link to="/">
-				<button className="btn btn-primary">Back home</button>
-			</Link>
+		<div className="container-fluid">
+			 <div className="p-5 text-start bg-image rounded-3" style={{
+            background: "url('https://madproyect.com/wp-content/uploads/2022/10/bio-construccion-mallorca-MadProyect.jpg') no-repeat",
+            backgroundSize: "cover",
+            height: "100vh"
+        }}>
+            <div className="mask h-100" >
+                <div className="d-flex justify-content-center align-items-center h-100 w-100">
+                    <div className="text-white text-center">
+                        <h1 className="mb-3">NUESTRA PROPUESTA</h1>
+                        <h4 className="mb-3">Ayudamos a las empresas a cumplir sus objetivos de sostenibilidad mejorando su posicionamiento en el mercado. Promoviendo la preservación del medio ambiente al reciclar deshechos y transformándolos en materiales de construcción sostenibles. </h4>   
+                    </div>
+                </div>
+
+	
+            </div>
+			
+        </div>
+			
 		</div>
 	);
 };
