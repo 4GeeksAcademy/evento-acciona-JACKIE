@@ -13,10 +13,7 @@ export const Navbar = () => {
 					</Link>
 					<div className="d-flex align-items-center">
 						<Link to="/demo" className="me-2">
-							<button className="btn">Nuestra idea</button>
-						</Link>
-						<Link to="/single">
-							<button className="btn">Objetivo principal</button>
+							<button className="btn">Nuestra Propuesta</button>
 						</Link>
 					</div>
 				</div>
