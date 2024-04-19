@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../img/logo_acciona.png"
-import "/workspaces/base-evento-acciona/src/front/styles/navbar.css";
+import "../../styles/navbar.css";
 
 export const Navbar = () => {
 	return (
@@ -13,10 +13,10 @@ export const Navbar = () => {
 					</Link>
 					<div className="d-flex align-items-center">
 						<Link to="/demo" className="me-2">
-							<button className="btn">Example button</button>
+							<button className="btn">Nuestra idea</button>
 						</Link>
 						<Link to="/single">
-							<button className="btn">Another button</button>
+							<button className="btn">Objetivo principal</button>
 						</Link>
 					</div>
 				</div>

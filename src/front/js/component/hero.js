@@ -7,14 +7,14 @@ export const Hero = () => {
 
 
         <div className="p-5 text-start bg-image rounded-3" style={{
-            background: "url('https://mediacdn.acciona.com/media/kqfme1qi/cabecera-business-as-unusual-acciona.jpg') no-repeat",
+            background: "url('https://www.bbva.com/wp-content/uploads/2023/07/alga-color-marron-sargazo-apertura.jpg') no-repeat",
             backgroundSize: "cover",
             height: "75vh"
         }}>
             <div className="mask h-100" >
                 <div className="d-flex flex-column justify-content-center align-items-start h-100 w-100">
                     <div className="text-white">
-                        <h1 className="mb-3">UNA COMPAÑÍA CON UN PROPÓSITO</h1>
+                        <h1 className="mb-3">BIOBUILD</h1>
                         <h4 className="mb-3">En ACCIONA creemos que existe una manera diferente de hacer negocios</h4>
                         <a data-mdb-button-init data-mdb-ripple-init className="btn btn-outline-light btn-lg" href="#!" role="button">Call to action</a>
                     </div>
